@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: safetrack-frontend
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: client/dist
+    buildFilter:
+      paths:
+        - client/**
+
+  - type: web
+    name: safetrack-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npx ts-node server/index.ts
+    rootDir: .
+    autoDeploy: true
+    buildFilter:
+      paths:
+        - server/**
+        - package.json
+        - tsconfig.json
+        - drizzle.config.ts
+
+envVars:
+  - key: GOOGLE_MAPS_API_KEY
+    sync: false
+  
