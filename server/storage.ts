@@ -58,16 +58,16 @@ export class MemStorage implements IStorage {
 
     // Initialize drivers - All drivers use the same password "driver123"
     const driverData = [
-      { driverId: "1001", password: "driver123", name: "Route 1 Driver", routeId: "1" },
-      { driverId: "1002", password: "driver123", name: "Route 2 Driver", routeId: "2" },
-      { driverId: "1004", password: "driver123", name: "Route 4 Driver", routeId: "4" },
-      { driverId: "1008", password: "driver123", name: "Route 8 Driver", routeId: "8" },
-      { driverId: "1010", password: "driver123", name: "Route 10 Driver", routeId: "10" },
-      { driverId: "1011", password: "driver123", name: "Route 11 Driver", routeId: "11" },
-      { driverId: "1012", password: "driver123", name: "Route 12 Driver", routeId: "12" },
-      { driverId: "1014", password: "driver123", name: "Route 14 Driver", routeId: "14" },
-      { driverId: "1015", password: "driver123", name: "Route 15 Driver", routeId: "15" },
-      { driverId: "1019", password: "driver123", name: "Route 19 Driver", routeId: "19" },
+      { driverId: "1001", password: "princedriver123", name: "Route 1 Driver", routeId: "1" },
+      { driverId: "1002", password: "princedriver123", name: "Route 2 Driver", routeId: "2" },
+      { driverId: "1004", password: "princedriver123", name: "Route 4 Driver", routeId: "4" },
+      { driverId: "1008", password: "princedriver123", name: "Route 8 Driver", routeId: "8" },
+      { driverId: "1010", password: "princedriver123", name: "Route 10 Driver", routeId: "10" },
+      { driverId: "1011", password: "princedriver123", name: "Route 11 Driver", routeId: "11" },
+      { driverId: "1012", password: "princedriver123", name: "Route 12 Driver", routeId: "12" },
+      { driverId: "1014", password: "princedriver123", name: "Route 14 Driver", routeId: "14" },
+      { driverId: "1015", password: "princedriver123", name: "Route 15 Driver", routeId: "15" },
+      { driverId: "1019", password: "princedriver123", name: "Route 19 Driver", routeId: "19" },
     ];
 
     driverData.forEach(driver => {
